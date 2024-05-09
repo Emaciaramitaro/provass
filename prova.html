@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="/Template/Mobile/images/icon.jpg">
+    <link rel="apple-touch-startup-image" href="/Template/Mobile/images/strat.jpg" />
+     <link rel="stylesheet" href="/Template/Mobile/css/amazeui.min.css">
+    <link rel="stylesheet" href="/Template/Mobile/css/common2.css">
+    <link rel="stylesheet" href="/Template/Mobile/css/index.css">
+    <link rel="stylesheet" href="/Template/Mobile/css/icon.css">
+    <link rel="stylesheet" href="/resources/css/artDialog.css">
+    <script>
+        var Webconfigs = {
+            "ROOT" : ""
+        }
+    </script>
+    </head>
+<script src="/Template/Mobile/js/jquery-3.1.1.min.js"></script> 
+<script type="text/javascript" src="/resources/js/artDialog.js"></script>
+<script type="text/javascript" src="/resources/js/way.min.js"></script>
+<script type="text/javascript" src="/resources/main/common.js"></script>
+<script src="/Template/Mobile/js/require.js" data-main="/Template/Mobile/js/main"></script>
+
+<link rel="stylesheet" href="/Template/Mobile/css/userHome.css">
+<style>
+	body{
+		background-color: #fff;
+	}
+	.bank_recharge .bank_form_list li .bank_right_input {
+		height: auto !important;
+	}
+</style>
+<body>
+	<header data-am-widget="header"class="am-header am-header-default header nav_bg am-header-fixed">
+		<div class="am-header-left am-header-nav">
+			<a href="javascript:history.back(-1);" class="">
+				<i class="iconfont icon-arrow-left"></i>
+			</a>
+      	</div>
+
+		<h1 class="am-header-title activity_h1">
+			Rimborsare
+		</h1>
+
+	</header>
+	
+	<div class="bank_recharge tankMoney_main">
+		<form class="am-form " method="post" action="/Apijiekou.savetikuanorder.do" url="" checkby_ruivalidate id="register_form"  onsubmit="return checkform(this)" >
+ 			<ul class="bank_form_list">
+				<li class="am-cf">
+                <li class="am-cf">
+                    <span class="bank_form_left am-fl">Se le condizioni per il rimborso sono soddisfatte.</span>
+                    <div class="am-fr bank_right_input" style="    width: 61%;">
+                        <input type="text" value="No" class="take_balance" style="color: red!important;">
+                            
+                    </div>
+                </li>
+				</li>
+                <li class="am-cf">
+                    <span class="bank_form_left am-fl">Nome del titolare della carta</span>
+                    <div class="am-fr bank_right_input">
+                        <input type="text" name="userbankname" readonly="" class="input_txt" value="Emanuele Ciaramitaro"  >
+                    </div>
+                </li>
+				<li class="am-cf">
+					<span class="bank_form_left am-fl">Saldo del conto</span>
+					<div class="am-fr bank_right_input">
+						<input type="text" value="205.00" class="take_balance" >
+					</div>
+				</li>
+<!--				<li class="am-cf">-->
+<!--					<span class="bank_form_left am-fl">洗码</span>-->
+<!--					<div class="am-fr bank_right_input">-->
+<!--						<input type="text" value="48.00" class="take_balance" disabled="disabled">-->
+<!--					</div>-->
+<!--				</li>-->
+				
+				<li class="am-cf">
+					<span class="bank_form_left am-fl">denaro rimborsabile</span>
+					<div class="am-fr bank_right_input">
+						<input type="text" value="205.00" class="take_balance">
+					</div>
+				</li>
+				<li class="am-cf">
+					<span class="bank_form_left am-fl">Crediti</span>
+
+					<div class="my_bank_right_input am-fr bank_right_input selected_bank">
+						<!-- <img src="/resources/images/bank/" style="float: left;margin-top: 10px;width:30px;"  /> -->
+								<div class="bank_info">
+									<em class="bank-name" style="font-size: 14px;">Emanuele Ciaramitaro</em>
+									<em style="font-size: 14px;">****<span class="bank-sum">7156485283</span></em>
+
+								</div>						<i class="iconfont icon-jiantouxia" style="position: absolute;top: 0px;right: 10px;"></i>
+					</div>
+					<style type="text/css">
+						.my_bank_right_input > .bank_info{
+							display: none !important;
+						}
+						.my_bank_right_input> .bank_info:first-child{
+							display: block !important;
+						}
+					</style>
+					<ul class="bank_list_box bank_right_input">
+						<li class="bank_list" data-bank-icon="/resources/images/bank/" data-bank-name="Emanuele Ciaramitaro" data-bank-sum="7156485283">
+ 							<input type="radio"  name="bankid" class="isplay_no" value="300" checked="checked">
+															<!-- <img src="/resources/images/bank/" style="float: left;margin-top: 10px;width:30px;"  /> -->
+ 							<div class="bank_info">
+								<em style="font-size: 14px;">Emanuele Ciaramitaro</em>
+								<em style="font-size: 14px;">****7156485283</em>
+							</div>
+						</li>
+						<li style="font-size: 14px;">Seleziona l'account che desideri rimborsare</li>
+					</ul>
+				</li>
+				<li class="am-cf">
+					<span class="bank_form_left am-fl">Importo rimborsato</span>
+					<div class="am-fr bank_right_input">
+						<input type="hidden" name="amount" value="205.00">
+					</div>
+				</li>
+
+			</ul>
+			<button class="am-btn am-btn-danger am-radius am-btn-block" type="submit">sicuro</button>
+		</form>	
+<!--		<div class="bottom_explain">-->
+<!--			<p>今天还可以回款<em data-tkcount>10000</em>次</p>-->
+<!--			<p>可回款金额=有效投注×3(此项需达到充值金额的30%才计入)+奖金+活动礼金</p>-->
+<!--			<p>单笔回款最低<em>100</em>元，最高<em>2000000</em>元</p>-->
+<!--		</div>-->
+	</div>
+	
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default bottom_navbar">
+    <ul class="am-navbar-nav am-cf am-avg-sm-5 my_nav_b" style="overflow: visible;">
+        <li style="position: relative;">
+<!--            <a href="/" class="bottom_navbar_list">-->
+            <a href="/Index.index.do" class="bottom_navbar_list mynav1">
+                <img id="shopListImg2" style="  width:25px;height:25px;border-radius:50%;margin-bottom:3px" src="/images/logo/shouye.png">
+                <span class="am-navbar-label">prima</span>
+            </a>
+        </li>
+        <li style="position: relative;">
+            <a href="/member.betRecord.do" class="bottom_navbar_list mynav2">
+                <img id="shopListImg3" style="  width:25px;height:25px;border-radius:50%;margin-bottom:3px" src="/images/logo/dingdan.png">
+                <span class="am-navbar-label">Ordine</span>
+            </a>
+        </li>
+		<li style="position: relative;">
+            <a href="/Index.lotteryHall.do" class="bottom_navbar_list mynav3">
+
+
+
+                 <div class="shopListA" style="    position: fixed;
+                                 bottom: 28px;
+                                 width: 50px;
+                                 height: 50px;
+                                 border-radius: 50px;
+                                 z-index: 1010;
+                                 background: #fff;
+                                 background: #fff;
+                left: calc(50% - 25px);
+                    text-align: center;
+                    font-size: 26px;
+                                 "
+                                 >
+                       <img id="shopListImg" style="  width:42px;height:42px;margin-top:8px;border-radius:50%" src="/images/logo/shopList.png">
+                 </div>
+                <span class="am-navbar-label am-position">Mercante</span>
+            </a>
+        </li>
+        <li style="position: relative;">
+            <a href="/activity.index.do" class="bottom_navbar_list mynav4">
+                <img id="shopListImg4" style="  width:25px;height:25px;border-radius:50%;margin-bottom:3px" src="/images/logo/youhui.png">
+                <span class="am-navbar-label">Attività</span>
+            </a>
+        </li>
+        <li style="position: relative;">
+            <a href="/Member.index.do" class="bottom_navbar_list mynav5">
+                <img id="shopListImg1" style="  width:25px;height:25px;border-radius:50%;margin-bottom:3px" src="/images/logo/myActive.png">
+                <span class="am-navbar-label">mio</span>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<style>
+    body{
+        font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    }
+  @font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.ttf') format('truetype');
+  }
+  .shopListImg{
+     width:50px;
+     height:50px;
+  }
+</style>
+
+	<script>
+		function checkform(obj){
+			$.post($(obj).attr('action'),$(obj).serialize(), function(json){
+				if(json.sign){
+					alert(json.message,'success');
+					var tkcount = $("[data-tkcount]").text()/1;
+					tkcount = tkcount-1;
+					if(tkcount<=0){
+						tkcount = 0;
+					}
+					$("[data-tkcount]").text(tkcount);
+
+				}else{
+					alert(json.message);
+				}
+                window.location.href = '/member.index.do';
+			},'json');
+
+			return false;
+		};
+	</script>
+</body>
+</html>
