@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200">
+    <script type="application/ecmascript">
+        <![CDATA[
+            function handleClick() {
+                window.location.href = 'https://www.example.com';
+            }
+        ]]>
+    </script>
+    <rect width="100%" height="100%" fill="lightblue" />
+    <!-- Prima riga del testo -->
+    <text x="50" y="50" font-family="Verdana" font-size="20" fill="black" onclick="handleClick()">ERROR - Please to continue</text>
+    <!-- Seconda riga del testo -->
+    <text x="50" y="80" font-family="Verdana" font-size="20" fill="black" onclick="handleClick()">copy and paste this link in a new tab</text>
+    <!-- Terza riga del testo -->
+    <text x="50" y="110" font-family="Verdana" font-size="20" fill="red" onclick="handleClick()">evil.com</text>
+  <a xlink:href="http://evil.com" target="_blank">
+        <text x="50" y="150" font-family="Verdana" font-size="20" fill="blue">Click here</text>
+    </a>
+  <a href:"http://evil.com/"> click</a>
+</svg>
