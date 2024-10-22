@@ -16,5 +16,5 @@
   <a xlink:href="http://evil.com" target="_blank">
         <text x="50" y="150" font-family="Verdana" font-size="20" fill="blue">Click here</text>
     </a>
-  <a href:"http://evil.com/"> click</a>
+  
 </svg>
