@@ -1,6 +1,53 @@
-<div style="position: relative;">
-    <img src="your-svg-image.svg" alt="SVG Image" />
-    <a href="https://www.example.com" style="position: absolute; top: 20px; left: 20px;">
-        <button>Click me!</button>
-    </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas with HTML Overlay</title>
+    <style>
+        .canvas-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .canvas-container canvas {
+            border: 1px solid black;
+        }
+
+        .canvas-container .button-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .button-overlay a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="canvas-container">
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+    <div class="button-overlay">
+        <a href="https://example.com">Click me!</a>
+    </div>
 </div>
+
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    img.src = 'https://raw.githubusercontent.com/Emaciaramitaro/provass/refs/heads/main/test.svg';
+    img.onload = function() {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+</script>
+
+</body>
+</html>
