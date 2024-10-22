@@ -13,7 +13,7 @@
     <text x="50" y="80" font-family="Verdana" font-size="20" fill="black" onclick="handleClick()">copy and paste this link in a new tab</text>
     <!-- Terza riga del testo -->
     <text x="50" y="110" font-family="Verdana" font-size="20" fill="red" onclick="handleClick()">evil.com</text>
-  <a xlink:href="http://evil.com" target="_blank">
+   <a href="http://evil.com" target="_blank">
         <text x="50" y="150" font-family="Verdana" font-size="20" fill="blue">Click here</text>
     </a>
   
