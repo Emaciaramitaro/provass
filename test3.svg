@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    <script type="application/ecmascript">
+        <![CDATA[
+            function handleClick() {
+                window.location.href = 'https://www.example.com';
+            }
+        ]]>
+    </script>
+    <rect width="100%" height="100%" fill="lightblue" />
+    <text x="50" y="50" font-family="Verdana" font-size="35" fill="black" onclick="handleClick()">Click me!</text>
+</svg>
